@@ -1,0 +1,127 @@
+$basic-color-text: #deb8b8;
+$h1-font: "Russo One", sans-serif;
+$h2-color: rgb(157, 148, 148);
+$h3-color: rgb(179, 150, 150);
+$link-color: #b68f8f;
+$default-color: rgb(116, 104, 104);
+$default-text-size: 20px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: $default-color;
+    width: 100%;
+}
+p,li{
+    font-size: $default-text-size;
+}
+nav{
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+
+    a{
+        text-decoration: none;
+        font-size: 24px;
+        color: $link-color;
+    }
+}
+header{
+    height: 5vh;
+    display: flex;
+    background-color: #f1f0f0;
+    border-bottom: 2px solid rgb(191, 190, 190);
+    width: 100%;
+}
+main{
+    width: 50%;
+    margin: auto;
+}
+.cont-h1{
+    display: flex;
+    height: 8em;
+}
+h1{
+    font: {
+        family: $h1-font;
+        size: 2.9em;
+    }
+    color: #805c5c;
+    margin: auto;
+}
+.cont-first{
+    text-align: center;
+    height: auto;
+    border-radius: 100px;
+
+    h2{
+        display: inline;
+    }
+    p{
+        width: 50%;
+        margin: 1em auto;
+        font-size: 22px;
+    }
+}
+article{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+
+    .cont-article{
+        margin: auto;
+        width: 90%;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px dashed rgb(218, 184, 190);
+        background-color: #f7f6f6;
+        border-radius: 50px;
+        margin-bottom: 1em;
+    }
+    h3{
+        color: $h3-color;
+        margin-top: -10px;
+    }
+    ul{
+       line-height: 27px;
+    }
+    figure{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+footer{
+    height: 15vh;
+    background-color: #444343;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p{
+        font-size: 24px;
+        color: $link-color;
+    }
+
+    .footer-links{
+        padding: 17px;
+        width: 50vw;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    a{
+        font-size: 20px;
+        text-decoration: none;
+        color: $link-color;
+    }
+}
