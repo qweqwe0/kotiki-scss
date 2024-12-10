@@ -30,15 +30,30 @@ nav a {
 }
 
 header {
-  height: 5vh;
+  height: 60px; 
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #f1f0f0;
   border-bottom: 2px solid rgb(191, 190, 190);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+
 }
 
+
+nav a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #b68f8f;
+  transition: color 0.3s ease, transform 0.2s ease; 
+}
+
+nav a:hover {
+  color: #8b5b5b; 
+  transform: scale(1.1); 
+}
 main {
   width: 50%;
   margin: auto;
